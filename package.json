@@ -2,7 +2,7 @@
   "name": "first-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://atsdev.github.io/first-react",
+  "homepage": "https://hippoem.github.io/first-react/",
   "dependencies": {
     "react": "^15.4.2",
     "react-router-dom": "^4.0.0"
