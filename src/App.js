@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './bootstrap.css';
-import './Todo.css';
 
 import {Todo} from './components/Todo';
 
