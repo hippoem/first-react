@@ -1,8 +1,12 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import '../bootstrap.css';
 import '../Todo.css';
 
 export class Todo extends Component {
+
+    static propTypes = {
+        buttonColor: PropTypes.string.isRequired,
+    }
 
     state = {
         inputText: '',
@@ -46,7 +50,8 @@ export class Todo extends Component {
                             value={this.state.inputText}
                             placeholder="what do you want to do?"
                             type="text"/>
-                        <button className="bb-input button" onClick={this.submitList}>Add</button>
+                        <button className="bb-input button" onClick={this.submitList}
+                        style={{background: this.props.buttonColor}}>Add</button>
                     </div>
 
                     <div className="list-box">
